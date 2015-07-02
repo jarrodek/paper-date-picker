@@ -1,0 +1,87 @@
+{
+    "attributes": {
+        "id": {},
+        "class$": {
+            "context": "div"
+        },
+        "enabled": {
+            "context": "div"
+        },
+        "is": {
+            "context": "style"
+        },
+        "on-tap": {
+            "context": "div"
+        },
+        "style": {},
+        "unresolved": {
+            "context": "body"
+        },
+        "src": {}
+    },
+    "elements": {
+        "template": {
+            "attributes": {
+                "items": {},
+                "if": {},
+                "as": {}
+            }
+        },
+        "iron-selector": {
+            "attributes": {
+                "on-iron-select": {},
+                "selected": {},
+                "selectable": {},
+                "class": {},
+                "attr-for-selected": {}
+            }
+        },
+        "neon-animated-pages": {
+            "attributes": {
+                "selected": {},
+                "entry-animation": {},
+                "selectable": {},
+                "class": {},
+                "attr-for-selected": {},
+                "exit-animation": {}
+            }
+        },
+        "iron-component-page": {},
+        "paper-date-picker": {
+            "attributes": {
+                "cross-fade": {},
+                "min": {},
+                "startDayOfWeek": {},
+                "max": {},
+                "locale": {},
+                "infiniteScrolling": {},
+                "date": {}
+            }
+        },
+        "paper-date-picker-dialog": {},
+        "paper-icon-button": {
+            "attributes": {
+                "icon": {},
+                "on-tap": {}
+            }
+        },
+        "neon-animatable": {},
+        "iron-pages": {
+            "attributes": {
+                "selected": {},
+                "selectable": {},
+                "attr-for-selected": {}
+            }
+        },
+        "paper-button": {
+            "attributes": {
+                "onClick": {},
+                "dialog-confirm": {},
+                "raised": {},
+                "on-tap": {},
+                "dialog-dismiss": {}
+            }
+        },
+        "dom-module": {}
+    }
+}

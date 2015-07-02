@@ -1,0 +1,88 @@
+:host {
+
+}
+
+#containerDialog{
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.date-picker-dialog::shadow #scroller {
+    padding:0px;
+}
+
+.date-picker-dialog .header {
+    text-align: center;
+    color: rgba(255,255,255,.5);
+    background-color: #009688;
+    position: relative;
+    margin-right: 24px;
+}
+
+.date-picker-dialog .header .dayOfWeekContainer {
+    padding: 5px;
+    background-color: #00695C;
+}
+
+.date-picker-dialog .header .dayOfMonthContainer {
+    cursor: pointer;
+}
+
+.date-picker-dialog .header .monthContainer {
+    cursor: pointer;
+    font-size: 24px;
+    min-height:24px;
+    font-weight: 300;
+}
+
+.date-picker-dialog .header .yearContainer {
+    cursor: pointer;
+    font-size: 24px;
+    min-height:24px;
+    font-weight: 400;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.date-picker-dialog .datePickerContainer {
+    height: 255px;
+    width: 300px;
+    margin-top: 12px;
+}
+.date-picker-dialog #datePicker {
+    width: 300px;
+}
+
+.date-picker-dialog .selected {
+    color: #FFFFFF;
+}
+
+@media only screen and (orientation : portrait) {
+    .date-picker-dialog .header .yearContainer{
+        padding-bottom:10px;
+    }
+    .date-picker-dialog .header .monthContainer{
+        padding-top:10px;
+    }
+    .date-picker-dialog .header .dayOfMonthContainer {
+        font-size: 60px;
+        min-height: 60px;
+    }
+}
+@media only screen and (orientation : landscape) {
+    .date-picker-dialog {
+        width:570px;
+    }
+
+    /* the second selector is for the polyfill version */
+    .date-picker-dialog >  #container , .date-picker-dialog #scroller >  #container {
+        display:flex;
+        flex-direction: row;
+        overflow:hidden;
+    }
+
+    .date-picker-dialog .header .dayOfMonthContainer {
+        font-size: 89px;
+        min-height: 89px;
+    }
+}

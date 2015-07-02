@@ -1,0 +1,78 @@
+:host {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 300px;
+    min-height: 255px;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.day{
+    width: calc(14% - 6px);
+    text-align: center;
+    margin: 3px;
+    min-width: 0px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-family: roboto;
+    font-weight: 700;
+}
+
+.day /deep/ .content {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+}
+.day::shadow paper-ripple {
+    color: #B2DFDB;
+}
+.day.iron-selected /deep/ .content {
+    background-color: #009688;
+    color: white;
+    border-radius: 100%;
+}
+
+.day.title{
+    padding-top: 0px;
+    padding-bottom: 8px;
+    font-weight: 400;
+    color: rgba(0,0,0,.57);
+    cursor: default;
+}
+
+.day[enabled='false']{
+    pointer-events: none;
+    color: rgba(0,0,0,.3);
+}
+
+h1{
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0,0,0,.8);
+    margin: 0px;
+    padding: 12px 0px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: roboto;
+}
+
+neon-animatable{
+    background-color: #fff;
+}
+neon-animatable,
+neon-animated-pages{
+    display: block;
+    height: 100%;
+    position: relative;
+    
+}
+neon-animated-pages{
+    overflow: hidden;
+    min-height: 255px;
+}
